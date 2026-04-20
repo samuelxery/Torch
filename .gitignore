@@ -1,0 +1,33 @@
+# python junk
+__pycache__/
+*.pyc
+
+# environments
+venv/
+.env
+
+# ide trash
+.vscode/
+.idea/
+
+# datasets + data
+data/
+*.tar.gz
+*.jsonl
+
+# models (ALL)
+*.pt
+*.pth
+models/
+alpaca-model/
+offload/
+
+# outputs / training stuff
+runs/
+output/
+output-*/
+
+# misc big junk
+*.csv
+
+finetune/

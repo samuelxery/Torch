@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>multiply machine 😈</h1>
+
+<input id="num" type="number" placeholder="enter number">
+<button onclick="send()">go</button>
+
+<p id="output"></p>
+
+<script>
+async function send() {
+    let value = document.getElementById("num").value;
+
+    let res = await fetch("http://127.0.0.1:8000/predict", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ number: Number(value) })
+    });
+
+    let data = await res.json();
+    console.log(data);
+    document.getElementById("output").innerText = "result: " + data.result;
+}
+</script>
+
+</body>
+</html>
