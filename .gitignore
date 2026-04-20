@@ -31,3 +31,5 @@ output-*/
 *.csv
 
 finetune/
+
+token.txt
