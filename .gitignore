@@ -31,5 +31,5 @@ results/
 *.csv
 
 finetune/
-
+output-qwen-3b/
 token.txt
