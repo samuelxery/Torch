@@ -1,35 +1,35 @@
-# python junk
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
 
-# environments
-venv/
-.env
+# Secrets - don't leak this
+token.txt
 
-# ide trash
-.vscode/
-.idea/
-
-# datasets + data
-data/
-*.tar.gz
-*.jsonl
-
-# models (ALL)
-*.pt
-*.pth
+# Model / training artifacts
 models/
 alpaca-model/
-offload/
-
-# outputs / training stuff
-runs/
-output/
-output-*/
-results/
-# misc big junk
-*.csv
-
 finetune/
+offload/
+output/
 output-qwen-3b/
-token.txt
+deploy_test/
+runs/
+
+# Data
+data/
+train.jsonl
+acc_results.csv
+
+# pandas cache dir if it's just scratch data
+*.jsonl
+*.json
+
+# Downloaded model scripts output (keep the script, ignore what it pulls)
+# adjust if download_model.py writes somewhere already covered above
+
+# OS junk
+.DS_Store
+.vscode
+.idea
