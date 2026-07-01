@@ -16,7 +16,8 @@ output/
 output-qwen-3b/
 deploy_test/
 runs/
-
+results/
+acc_results/
 # Data
 data/
 train.jsonl
